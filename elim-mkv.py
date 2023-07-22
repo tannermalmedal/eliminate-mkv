@@ -2,7 +2,7 @@ import os
 import sys
 
 # get path of current working directory
-path = os.getcwd()
+path = os.path.dirname(os.path.realpath(__file__))
  
 # get every file within directory
 files = os.scandir(path)
